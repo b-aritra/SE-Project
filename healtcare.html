@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .hero .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero .hero-text h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .appointment-form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .appointment-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .appointment-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .appointment-form input, .appointment-form select, .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .appointment-form button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .appointment-form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Healthcare Appointment System</h1>
+    </header>
+
+    <section class="hero">
+        <img src="https://via.placeholder.com/1500x500" alt="Healthcare Hero Image">
+        <div class="hero-text">
+            <h1>Your Health, Our Priority</h1>
+            <p>Book your appointment with top doctors today!</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="general">General Medicine</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="cardiology">Cardiology</option>
+                </select>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Healthcare Appointment System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
