@@ -1,1 +1,1 @@
-# SE-Project
+# AppointEase
