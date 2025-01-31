@@ -14,14 +14,19 @@ Welcome to AppointEase, your go-to solution for patients to manage appointments 
 To install AppointEase, follow these steps:
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/yourusername/AppointEase.git
     ```
+
 2. Navigate to the project directory:
+
     ```bash
     cd AppointEase
     ```
+
 3. Install the dependencies:
+
     ```bash
     npm install
     ```
@@ -29,6 +34,7 @@ To install AppointEase, follow these steps:
 ## Usage
 
 To start the application, run:
+
 ```bash
 npm start
 ```
@@ -43,4 +49,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or feedback, please reach out to us at support@appointease.com.
+For any questions or feedback, please reach out to us at <support@appointease.com>.
