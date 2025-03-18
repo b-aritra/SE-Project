@@ -1,9 +1,9 @@
-import appointment_img from './appointment_img.png'
-import header_img from './header_img.png'
+import appointment from './appointment.png'
+import header from './header.png'
 import group_profiles from './group_profiles.png'
-import profile_pic from './profile_pic.png'
-import contact_image from './contact_image.png'
-import about_image from './about_image.png'
+import profile_picture from './profile_picture.png'
+import contact from './contact.png'
+import about from './about.png'
 import logo from './logo.png'
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
@@ -30,26 +30,26 @@ import doc12 from './doc12.png'
 import doc13 from './doc13.png'
 import doc14 from './doc14.png'
 import doc15 from './doc15.png'
-import Dermatologist from './dermatologist.svg'
-import Gastroenterologist from './Gastroenterologist.svg'
-import General_physician from './general_physician.svg'
-import Gynecologist from './gynecologist.svg'
-import Neurologist from './neurologist.svg'
-import Pediatricians from './Pediatricians.svg'
+import dermatologist from './dermatologist.svg'
+import gastroenterologist from './gastroenterologist.svg'
+import general_physician from './general_physician.svg'
+import gynaecologist from './gynaecologist.svg'
+import neurologist from './neurologist.svg'
+import pediatrician from './pediatrician.svg'
 
 
 export const assets = {
-    appointment_img,
-    header_img,
+    appointment,
+    header,
     group_profiles,
     logo,
     chats_icon,
     verified_icon,
     info_icon,
-    profile_pic,
+    profile_picture,
     arrow_icon,
-    contact_image,
-    about_image,
+    contact,
+    about,
     menu_icon,
     cross_icon,
     dropdown_icon,
@@ -60,28 +60,28 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'General physician',
-        image: General_physician
+        speciality: 'General Physician',
+        image: general_physician
     },
     {
-        speciality: 'Gynecologist',
-        image: Gynecologist
+        speciality: 'Gynaecologist',
+        image: gynaecologist
     },
     {
         speciality: 'Dermatologist',
-        image: Dermatologist
+        image: dermatologist
     },
     {
-        speciality: 'Pediatricians',
-        image: Pediatricians
+        speciality: 'Pediatrician',
+        image: pediatrician
     },
     {
         speciality: 'Neurologist',
-        image: Neurologist
+        image: neurologist
     },
     {
         speciality: 'Gastroenterologist',
-        image: Gastroenterologist
+        image: gastroenterologist
     },
 ]
 
@@ -90,7 +90,7 @@ export const doctors = [
         _id: 'doc1',
         name: 'Dr. Richard James',
         image: doc1,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -104,7 +104,7 @@ export const doctors = [
         _id: 'doc2',
         name: 'Dr. Emily Larson',
         image: doc2,
-        speciality: 'Gynecologist',
+        speciality: 'Gynaecologist',
         degree: 'MBBS',
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -132,7 +132,7 @@ export const doctors = [
         _id: 'doc4',
         name: 'Dr. Christopher Lee',
         image: doc4,
-        speciality: 'Pediatricians',
+        speciality: 'Pediatrician',
         degree: 'MBBS',
         experience: '2 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -174,7 +174,7 @@ export const doctors = [
         _id: 'doc7',
         name: 'Dr. Christopher Davis',
         image: doc7,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -188,7 +188,7 @@ export const doctors = [
         _id: 'doc8',
         name: 'Dr. Timothy White',
         image: doc8,
-        speciality: 'Gynecologist',
+        speciality: 'Gynaecologist',
         degree: 'MBBS',
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -216,7 +216,7 @@ export const doctors = [
         _id: 'doc10',
         name: 'Dr. Jeffrey King',
         image: doc10,
-        speciality: 'Pediatricians',
+        speciality: 'Pediatrician',
         degree: 'MBBS',
         experience: '2 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -258,7 +258,7 @@ export const doctors = [
         _id: 'doc13',
         name: 'Dr. Chloe Evans',
         image: doc13,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -272,7 +272,7 @@ export const doctors = [
         _id: 'doc14',
         name: 'Dr. Ryan Martinez',
         image: doc14,
-        speciality: 'Gynecologist',
+        speciality: 'Gynaecologist',
         degree: 'MBBS',
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
