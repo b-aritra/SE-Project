@@ -1,10 +1,21 @@
-import express from 'express'
+import express from 'express';
+import { addDoctor, loginAdmin } from '../controllers/adminController.js';
+import upload from '../middlewares/multer.js';
+import authAdmin from '../middlewares/authAdmin.js';
 
-import { addDoctor } from '../controllers/adminController.js'
-import upload from '../middlewares/multer.js'
+const adminRouter = express.Router();
 
-const adminRouter = express.Router()
+// Admin Login
+adminRouter.post('/login', loginAdmin);
 
-adminRouter.post('/add-doctor', upload.single('image'), addDoctor)
+// Add Doctor (Auth -> Then Upload Image)
+adminRouter.post('/add-doctor', authAdmin, (req, res, next) => {
+    upload.single('image')(req, res, function (err) {
+        if (err) {
+            return res.status(400).json({ success: false, message: err.message });
+        }
+        next();
+    });
+}, addDoctor);
 
-export default adminRouter
+export default adminRouter;

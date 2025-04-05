@@ -1,30 +1,29 @@
+import 'dotenv/config';  // ✅ Load environment variables first
 import express from 'express';
 import cors from 'cors';
-import 'dotenv/config';  // ✅ No need to call dotenv.config() again
-import connectDB from './config/mongodb.js';  // ✅ Fixed function nnpm ame
+import connectDB from './config/mongodb.js';  
 import connectCloudinary from './config/cloudinary.js';
-import adminRouter from './routers/adminRoute.js';
+import adminRouter from './routers/adminRoute.js';  // ✅ Ensure file name consistency
 
+// Connect to Database & Cloudinary
 connectDB();
+connectCloudinary();
 
 // App config
 const app = express();
 const port = process.env.PORT || 4000;
-connectDB();
-connectCloudinary()
 
 // Middlewares
 app.use(express.json());
-app.use(cors()); 
+app.use(cors());
 
-// API endpoint
-app.use('/api/admin', adminRouter)
+// API Endpoints
+app.use('/api/admin', adminRouter);  // localhost:4000/api/admin/add-doctor
 
-//localhost:4000/api/admin/add-doctor
-
+// Default Route
 app.get('/', (req, res) => {
-    res.send('API WORKING great');
+    res.send('🚀 API is Working Great!');
 });
 
-// Start server
+// Start Server
 app.listen(port, () => console.log(`🚀 Server started on http://localhost:${port}`));
