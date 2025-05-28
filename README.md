@@ -2,6 +2,9 @@
 
 Welcome to AppointEase, your go-to solution for patients to manage appointments with doctors efficiently.
 
+## Frontend Design
+
+
 ## Features
 
 - Easy appointment scheduling with doctors
